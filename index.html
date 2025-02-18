@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .logo img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: none; /* Hide all sections by default */
+        }
+        #home {
+            display: block; /* Show home section by default */
+        }
+        .main-content h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        .main-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .developer .photo {
+            width: 25%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('main-content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="your-logo-url" alt="School Logo">
+        </div>
+        <nav>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('services')">Services</a>
+            <a onclick="showSection('about')">About</a>
+            <a onclick="showSection('contact')">Contact</a>
+            <a onclick="showSection('developer')">Developer</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="main-content">
+        <h1>Welcome to Our School</h1>
+        <img src="slhs.jpg" alt="School Picture">
+        <h2>Meet the Principal</h2>
+        <img src="principal.jpg" alt="Principal Picture">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="main-content">
+        <h1>Our Services</h1>
+        <p>Guidance and Counseling: Our dedicated guidance counselors are available to assist students with academic planning, college and career guidance, personal development, and emotional support. We offer both individual and group counseling sessions.</p>
+        <p>Special Education Services: We provide tailored support for students with special needs, including individualized education plans (IEPs), specialized instruction, and access to resources to ensure every student reaches their full potential.</p>
+        <p>Health and Wellness: Our school health services include a fully-equipped clinic staffed by qualified healthcare professionals. We offer regular health check-ups, vaccinations, and wellness programs to promote a healthy school community.</p>
+        <p>Library and Media Center: Our library is a hub of learning and exploration, offering a vast collection of books, digital resources, and research tools. We also provide media center services, including computer access, printing, and multimedia equipment.</p>
+        <p>Student Support Services: To help students succeed academically, we offer tutoring programs, study skills workshops, and homework assistance. Our teachers and staff are committed to providing personalized support and enrichment opportunities.</p>
+        <p>Parental Engagement: We believe in fostering strong partnerships with parents and guardians. Our school offers various programs and workshops to keep parents informed and involved in their child's education. We also host regular parent-teacher meetings and family events.</p>
+        <p>Community Outreach: Sta. Lucia High School actively engages with the local community through various outreach programs and volunteer opportunities. We encourage students to participate in community service projects to develop a sense of civic responsibility and leadership.</p>
+        <p>Transportation Services: For the convenience of our students and families, we provide safe and reliable transportation services. Our school buses are equipped with modern safety features and operated by trained drivers.</p>
+        <p>Technology Integration: We embrace technology to enhance learning and streamline school operations. Our services include access to online learning platforms, digital classrooms, and technical support for students and staff.</p>
+        <!-- Copy services content from the provided link -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="main-content">
+        <h1>About Us</h1>
+        <p> mission: To deliver a high-quality education that inspires students to become lifelong learners, critical thinkers, and responsible global citizens.</p>
+        <p>-academic program</p>
+        <p>middle School: The middle school curriculum is designed to challenge students and promote independent thinking, preparing them for high school and beyond.</p>
+        <p>High School: Our high school program offers a wide range of courses, including Advanced Placement (AP) classes, to help students achieve their academic goals and prepare for college.</p>
+        <p>-Extracurricular Activities:</p>
+        <p>Sports: From basketball to soccer, our athletic programs help students stay active and develop teamwork skills.</p>
+        <p>Clubs: We offer a variety of clubs, including robotics, debate, and art, to cater to diverse interests.</p>
+        <p>Performing Arts: Our theater and music programs provide opportunities for students to showcase their talents and build confidence.</p>
+        <p>-Facilities:</p>
+        <p>Library: A well-stocked library with resources to support students' academic and personal growth.</p>
+        <p>Science Labs: State-of-the-art labs equipped for hands-on learning and experimentation.</p>
+        <p>Sports Complex: A comprehensive sports complex that includes a gymnasium, track, and fields.</p>
+        <p>Community Involvement: We believe in the power of community and encourage students, parents, and staff to get involved in various school events and initiatives. From volunteer opportunities to family nights, there are plenty of ways to connect and contribute.</p>
+        <!-- Copy about content from the provided link -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-content">
+        <h1>Contact Us</h1>
+        <p>Contact Us: Have questions or want to learn more? Feel free to reach out to us at [(2) 8-656 99 55] or visit our campus at [30 Tramo St. Rosario Village,Sta Lucia, Pasig City].</p>
+        <!-- Copy contact content from the provided link -->
+    </section>
+
+    <!-- Developer Section -->
+    <section id="developer" class="main-content">
+        <h1>Developer</h1>
+        <div class="developer">
+            <img src="karl.jpg" alt="Developer Picture" class="photo">
+            <p>Name: Karl Patrick E. Elcano</p>
+            <p>Grade 12 ICT student at Sta. Lucia High School.</p>
+            <p>Passionate Pabout technology and software development.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sta Lucia High School. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
